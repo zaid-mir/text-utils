@@ -42,7 +42,6 @@ function App() {
 
   return (
     <>
-      {/* React Router */}
       <Router>
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
@@ -59,11 +58,6 @@ function App() {
                 />
               }
             />
-            {/* <TextForm
-                  heading="Enter the text to analyze below"
-                  onShowAlert={showAlert}
-                  mode={mode}
-                /> */}
           </Routes>
         </div>
       </Router>

@@ -5,7 +5,6 @@ function TextForm(props) {
 
   let handleChange = (event) => {
     setText(event.target.value);
-    // console.log(text);
   };
   let handleUpClick = () => {
     let newText = text.toUpperCase();
@@ -22,7 +21,6 @@ function TextForm(props) {
     for (let i = text.length - 1; i >= 0; i--) {
       revText += text[i];
     }
-    // console.log(revText);
     setText(revText);
     props.showAlert("Reversed the Text", "success");
   };
